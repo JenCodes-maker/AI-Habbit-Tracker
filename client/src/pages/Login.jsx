@@ -100,6 +100,17 @@ localStorage.setItem(
           Login
         </button>
 
+
+        <p className="text-center mt-4 text-gray-400">
+  New user?{" "}
+  <span
+    onClick={() => navigate("/register")}
+    className="text-cyan-400 cursor-pointer hover:underline"
+  >
+    Create Account
+  </span>
+</p>
+
       </form>
 
     </div>
