@@ -29,7 +29,12 @@ const Login = () => {
         formData
       );
 
-      console.log(res.data);
+      console.log("NEW LOGIN CODE RUNNING");
+console.log(res.data);
+
+localStorage.setItem("token", res.data.token);
+
+console.log("TOKEN AFTER SAVE:", localStorage.getItem("token"));
 
       localStorage.setItem(
   "token",
